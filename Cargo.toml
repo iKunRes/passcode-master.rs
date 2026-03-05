@@ -9,39 +9,39 @@ argon2 = "0.5"
 async-trait = "0.1"
 atoi = "2.0.0"
 axum = { version = "0.8", features = ["ws", "http2"] }
-axum-extra = { version = "0.10", features = ["typed-header"] }
+axum-extra = { version = "0.12", features = ["typed-header"] }
 chrono = "^0.4"
 chrono-tz = "0.10"
 clap = { version = "4", features = ["cargo"] }
 enum-primitive-derive = "0.3.0"
 env_logger = "0.11"
 futures-util = "0.3"
-kstool = "0.2"
-kstool-helper-generator = "0.4"
+kstool = "0.3"
+kstool-helper-generator = "0.7"
 log = { version = "0.4", features = [
     "release_max_level_trace",
     "max_level_trace",
 ] }
 num-traits = "0.2.19"
-rand = "0.9"
+rand = "0.10"
 regex = "1"
-reqwest = { version = "0.12", default-features = false, features = [
-    "rustls-tls-native-roots",
+reqwest = { version = "0.13", default-features = false, features = [
+    "rustls",
     "cookies",
     "json",
 ] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite"] }
-strum = { version = "0.27", features = ["derive"] }
+strum = { version = "0.28", features = ["derive"] }
 tap = "1"
-teloxide = { version = "0.13", default-features = false, features = [
+teloxide = { version = "0.17", default-features = false, features = [
     "macros",
     "rustls",
     "ctrlc_handler",
 ] }
 tokio = { version = "1", features = ["full"] }
-toml = "0.8"
+toml = "1"
 totp-rs = { version = "5.5.1", features = [] }
 
 [build-dependencies]
