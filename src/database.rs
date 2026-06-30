@@ -1,6 +1,6 @@
 use futures_util::StreamExt as _;
 use log::{error, info};
-use sqlx::{sqlite::SqliteConnectOptions, Connection, SqliteConnection};
+use sqlx::{Connection, SqliteConnection, sqlite::SqliteConnectOptions};
 
 pub mod v1 {
     pub const VERSION: &str = "1";

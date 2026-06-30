@@ -7,7 +7,7 @@ edition = "2024"
 anyhow = "1"
 argon2 = "0.5"
 async-trait = "0.1"
-atoi = "2.0.0"
+atoi = "3"
 axum = { version = "0.8", features = ["ws", "http2"] }
 axum-extra = { version = "0.12", features = ["typed-header"] }
 chrono = "^0.4"
@@ -32,7 +32,7 @@ reqwest = { version = "0.13", default-features = false, features = [
 ] }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
-sqlx = { version = "0.8", features = ["runtime-tokio", "sqlite"] }
+sqlx = { version = "0.9", features = ["runtime-tokio", "sqlite"] }
 strum = { version = "0.28", features = ["derive"] }
 tap = "1"
 teloxide = { version = "0.17", default-features = false, features = [
@@ -42,7 +42,8 @@ teloxide = { version = "0.17", default-features = false, features = [
 ] }
 tokio = { version = "1", features = ["full"] }
 toml = "1"
-totp-rs = { version = "5.5.1", features = [] }
+totp-rs = { version = "5", features = [] }
+time = ">=0.3, <0.3.52"
 
 [build-dependencies]
 ks-placeholder = "0.1.1"
